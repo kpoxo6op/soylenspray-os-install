@@ -8,9 +8,11 @@ Lenovo PC
 
 Set BIOS to boot from USB for full autoinstall experience
 
-Set static IPs with ASUS mobile app via DHCP
+Set static IPs with ASUS web GUI via DHCP.
 
 ## Notes
+
+Mobile app does not allow to set the valid 192.168.1.103 outside of the router DHCP range.
 
 Not yet tried to install
 
