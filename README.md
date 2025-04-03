@@ -14,6 +14,8 @@ Set static IPs with ASUS web GUI via DHCP.
 
 Mobile app does not allow to set the valid 192.168.1.103 outside of the router DHCP range.
 
+Increased the DHCP range from .99 to .110.
+
 Not yet tried to install
 
 ## Steps
