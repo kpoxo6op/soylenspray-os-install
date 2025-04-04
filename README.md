@@ -6,7 +6,7 @@ This repository contains the configuration for setting up Ubuntu VMs based on Le
 
 Lenovo PC
 
-Set BIOS to boot from USB for full autoinstall experience
+Press F12 for boot menu on Lenovo PC.
 
 Set static IPs with ASUS web GUI via DHCP.
 
@@ -15,8 +15,6 @@ Set static IPs with ASUS web GUI via DHCP.
 Mobile app does not allow to set the valid 192.168.1.103 outside of the router DHCP range.
 
 Increased the DHCP range from .99 to .110.
-
-Not yet tried to install
 
 ## Steps
 
