@@ -19,8 +19,6 @@ autoinstall:
     - echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' >> /target/etc/sudoers
     - echo "PermitRootLogin yes" >> /target/etc/ssh/sshd_config
     - echo "PasswordAuthentication yes" >> /target/etc/ssh/sshd_config
-    - cp -r /cdrom/yt6801-linux-driver-1.0.29 /target/home/
-    - cp -r /cdrom/driver-build-packages-24.04/*.deb /target/home/
     - echo 'HandleLidSwitchDocked=ignore' >> /target/etc/systemd/logind.conf
     - echo 'HandleLidSwitch=ignore' >> /target/etc/systemd/logind.conf
     - chroot /target systemctl restart ssh
