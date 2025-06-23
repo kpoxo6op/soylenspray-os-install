@@ -56,24 +56,12 @@ autoinstall:
   keyboard:
     layout: us
   timezone: Pacific/Auckland
-  # 256 GB NVMe
+  # 256 GB NVMe serial from lsblk -o NAME,SERIAL
   storage:
-    layout:
-      name: direct
-      match:
-        size: 240G to 270G
-      preserve: false
-      swap: false
-    # 500 GB SATA
-    config:
-      - id: blank-sata
-        type: disk
-        match:
-          path: /dev/sda
-        ptable: gpt
-        wipe: superblock-recursive
-        preserve: false
-        partitions: []
-
-    fstab:
-      strict: false
+  layout:
+    name: direct
+    match:
+    serial: KXG5AZNV256G
+    preserve: false
+    swap: false
+  config: []
