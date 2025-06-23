@@ -60,6 +60,6 @@ autoinstall:
     layout:
       name: direct
       match:
-        size: 1G to 500G
+        size: 240G to 270G
       preserve: false
       swap: false
