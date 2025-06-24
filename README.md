@@ -39,3 +39,23 @@ Copy files to USB
 # copy boot/grub/grub.cfg t o/path/to/usb/boot/grub/
 # copy autoinstall.yaml to USB root
 ```
+
+## Validate Autoinstall Configuration
+
+Reference: [Autoinstall Validation](https://canonical-subiquity.readthedocs-hosted.com/en/latest/howto/autoinstall-validation.html)
+
+To validate the autoinstall configuration before deployment:
+
+```bash
+# Clone the subiquity repository
+git clone https://github.com/canonical/subiquity.git && cd subiquity/
+
+# Install dependencies
+make install_deps
+
+# Validate the configuration
+./scripts/validate-autoinstall-user-data.py ../autoinstall.yaml
+
+```
+
+**Note**: The validation script may show SNAP-related errors in development environments, but if the core autoinstall validation shows "SUCCESS", your configuration is valid.

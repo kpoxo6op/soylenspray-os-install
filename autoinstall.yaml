@@ -58,10 +58,10 @@ autoinstall:
   timezone: Pacific/Auckland
   # 256 GB NVMe serial from lsblk -o NAME,SERIAL
   storage:
-  layout:
-    name: direct
-    match:
-      serial: 49S010A0TC1Q
-    preserve: false
-    swap: false
-  config: []
+    layout:
+      name: direct
+      match:
+        serial: 49S010A0TC1Q
+      preserve: false
+      swap: false
+    config: []
