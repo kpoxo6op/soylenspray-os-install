@@ -61,7 +61,7 @@ autoinstall:
   layout:
     name: direct
     match:
-    serial: KXG5AZNV256G
+    serial: 49S010A0TC1Q
     preserve: false
     swap: false
   config: []
