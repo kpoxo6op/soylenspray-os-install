@@ -61,7 +61,6 @@ autoinstall:
     layout:
       name: direct
       match:
-        serial: 49S010A0TC1Q
+        size: smallest
       preserve: false
       swap: false
-    config: []
