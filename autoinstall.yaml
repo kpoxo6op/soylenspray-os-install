@@ -21,8 +21,6 @@ autoinstall:
     - echo "PasswordAuthentication yes" >> /target/etc/ssh/sshd_config
     - echo 'HandleLidSwitchDocked=ignore' >> /target/etc/systemd/logind.conf
     - echo 'HandleLidSwitch=ignore' >> /target/etc/systemd/logind.conf
-    - chroot /target systemctl restart ssh
-    - chroot /target systemctl restart systemd-logind
   # end late-commands
   # begin user-data
   # Set hostname
